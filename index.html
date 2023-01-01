@@ -1,920 +1,1129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-		<!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>ايمان الشمري</title>
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/media-queries.css">
-        <!-- Favicon and touch icons -->
-		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="shortcut icon" href="assets/ico/favicon-16x16.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-    </head>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>ايمان الشمري</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media-queries.css" />
+    <!-- Favicon and touch icons -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="assets/ico/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="assets/ico/apple-touch-icon-144-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="assets/ico/apple-touch-icon-114-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="assets/ico/apple-touch-icon-72-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/ico/apple-touch-icon-57-precomposed.png"
+    />
+  </head>
 
-    <body>
-
-		<!-- Wrapper -->
-    	<div class="wrapper">
-			<!-- Sidebar -->
-			<nav class="sidebar">
-				<!-- close sidebar menu -->
-				<div class="dismiss">
-					<i class="fas fa-arrow-left"></i>
-				</div>			
-				<div class="logo">
-					<h3 style="color: black;"><a href="index.html"></a></h3>
-				</div>
-				
-				<ul class="list-unstyled menu-elements">
-					<li class="active">
-						<a class="scroll-link" href="#top-content"><i class="fas fa-home"></i> الصفحة الرئيسية</a>
-					</li>
-					<li>
-						<a class="scroll-link" href="#section-1"><i class="fas fa-user"></i> حول</a>
-					</li>
-					<li>
-						<a class="scroll-link" href="#section-2"><i class="fas fa-stream"></i> تاريخي الوظيفي</a>
-					</li>
-					<li>
-						<a class="scroll-link" href="#section-3"><i class="fas fa-trophy"></i> الإنجازات</a>
-					</li>
-					<li>
-						<a class="scroll-link" href="#section-5"><i class="fas fa-envelope"></i> شهادات</a>
-					</li>
-					<li>
-						<a class="scroll-link" href="#section-4"><i class="fas fa-cog"></i> استراتيجيات التدريس</a>
-					</li>
-					<li>
-						<a class="scroll-link" href="#section-6"><i class="fas fa-table"></i> الجدول الدراسي</a>
-					</li>
-				</ul>
-				
-				<div class="to-top">
-					<a class="btn btn-primary btn-customized-3" href="#" role="button">
-	                    <i class="fas fa-arrow-up"></i> Top
-	                </a>
-				</div>
-				
-				<div class="dark-light-buttons">
-					<a class="btn btn-primary btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
-					<a class="btn btn-primary btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
-				</div>
-			
-			</nav>
-			<!-- End sidebar -->
-			
-			<!-- Dark overlay -->
-    		<div class="overlay"></div>
-
-			<!-- Content -->
-			<div class="content">
-			
-				<!-- open sidebar menu -->
-				<a class="btn btn-primary btn-customized open-menu" href="#" role="button">
-                    <i class="fas fa-align-left"></i> <span>Menu</span>
-                </a>
-			
-		        <!-- Top content -->
-				<!--  style="background-color: red;" -->
-		        <div class="top-content section-container" id="top-content" >
-			        <div class="container">
-			            <div class="row">
-			                <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-			                	<h1 class="wow fadeIn"><strong>ملف إنجاز للمعلمة ايمان الشمري</strong></h1>
-			                	<!-- <div class="description wow fadeInLeft">
-			                		<p>
-			                			A template with Sidebar Menu made with the Bootstrap 4 framework. Download the template or learn how to create it, step by step, on 
-			                			<a href="https://azmind.com"><strong>AZMIND</strong></a>.
-			                		</p>
-			                	</div> -->
-			                	<!-- <div class="buttons wow fadeInUp">							
-									<a class="btn btn-primary btn-customized scroll-link" href="#section-1" role="button">
-										<i class="fas fa-book-open"></i> Learn More
-									</a>
-									<a class="btn btn-primary btn-customized-2 scroll-link" href="#section-3" role="button">
-										<i class="fas fa-pencil-alt"></i> Our Projects
-									</a>
-								</div> -->
-			                </div>
-			            </div>
-			        </div>
-		        </div>
-		
-		        <!-- Section 1 -->
-		        <div class="section-1-container section-container" id="section-1">
-			        <div class="container">
-			            <div class="row">
-			                <div class="col section-1 section-description wow fadeIn">
-			                    <h2>خريجة علوم الحاسب وحاصلة على شهادات دولية ومحلية و لدي خبرة 15+ سنة في التدريس</h2>
-			                    <div class="divider-1 wow fadeInUp"><span></span></div>
-			                </div>
-			            </div>
-			            <!-- <div class="row"> -->
-							<!-- <div class="col-md-4 section-1-box wow fadeInUp"> -->
-							<!-- <h2>saad</h2></div> -->
-		                	<!-- <div class="col-md-4 section-1-box wow fadeInUp">
-		                		<div class="row">
-		                			<div class="col-md-4">
-					                	<div class="section-1-box-icon">
-					                		<i class="fas fa-magic"></i>
-					                	</div>
-				                	</div>
-			                		<div class="col-md-8">
-			                    		<h3>Branding</h3>
-			                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-			                    	</div>
-			                    </div>
-		                    </div> -->
-		                    <!-- <div class="col-md-4 section-1-box wow fadeInDown">
-			                	<div class="row">
-		                			<div class="col-md-4">
-					                	<div class="section-1-box-icon">
-					                		<i class="fas fa-cog"></i>
-					                	</div>
-				                	</div>
-			                		<div class="col-md-8">
-			                    		<h3>Web design</h3>
-			                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-			                    	</div>
-			                    </div>
-		                    </div> -->
-		                    <!-- <div class="col-md-4 section-1-box wow fadeInUp">
-			                	<div class="row">
-		                			<div class="col-md-4">
-					                	<div class="section-1-box-icon">
-					                		<i class="fab fa-twitter"></i>
-					                	</div>
-				                	</div>
-			                		<div class="col-md-8">
-			                    		<h3>Social media</h3>
-			                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-			                    	</div>
-			                    </div>
-		                    </div> -->
-			            </div>
-			        </div>
-		        </div>
-		
-		        <!-- Section 2 -->
-				<div class="section-2-container section-container section-container" id="section-2">
-					<div class="container">
-						<div class="row">
-			                <div class="col section-2 section-description wow fadeIn">
-								<h2>التاريخ الوظيفي</h2>
-			                    <div class="divider-1 wow fadeInUp"><span></span></div>
-								
-			                </div>
-			            </div>
-						<div class="main-timeline">
-						
-												<!-- start experience section-->
-												<div class="timeline">
-													<div class="icon"></div>
-													<div class="date-content">
-														<div class="date-outer">
-															<span class="date">
-																	<span class="month">4 سنوات</span>
-															<span class="year">2005</span>
-															</span>
-														</div>
-													</div>
-													<div class="timeline-content">
-														<h5 class="title">معهد نيو هرايزن</h5>
-														<p class="description">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
-														</p>
-													</div>
-												</div>
-												<!-- end experience section-->
-						
-												<!-- start experience section-->
-												<div class="timeline">
-													<div class="icon"></div>
-													<div class="date-content">
-														<div class="date-outer">
-															<span class="date">
-																	<span class="month">1 Years</span>
-															<span class="year">2015</span>
-															</span>
-														</div>
-													</div>
-													<div class="timeline-content">
-														<h5 class="title">Product Designer</h5>
-														<p class="description">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
-														</p>
-													</div>
-												</div>
-												<!-- end experience section-->
-						
-												<!-- start experience section-->
-												<div class="timeline">
-													<div class="icon"></div>
-													<div class="date-content">
-														<div class="date-outer">
-															<span class="date">
-																	<span class="month">2 Years</span>
-															<span class="year">2016</span>
-															</span>
-														</div>
-													</div>
-													<div class="timeline-content">
-														<h5 class="title">Web Designer</h5>
-														<p class="description">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
-														</p>
-													</div>
-												</div>
-												<!-- end experience section-->
-						
-												<!-- start experience section-->
-												<div class="timeline">
-													<div class="icon"></div>
-													<div class="date-content">
-														<div class="date-outer">
-															<span class="date">
-																	<span class="month">2 Years</span>
-															<span class="year">2018</span>
-															</span>
-														</div>
-													</div>
-													<div class="timeline-content">
-														<h5 class="title">Graphic Designer</h5>
-														<p class="description">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
-														</p>
-													</div>
-												</div>
-												<!-- end experience section-->
-						
-											</div>
-						</div>
-				</div>
-		        <!-- <div class="section-2-container section-container section-container-gray-bg" id="section-2">
-			        <div class="container">
-			            <div class="row">
-			                <div class="col section-2 section-description wow fadeIn">
-			                </div>
-			            </div>
-			            <div class="row">
-			            	<div class="col-8 section-2-box wow fadeInLeft">
-		                    	<h3>About Us</h3>
-		                    	<p class="medium-paragraph">
-		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-		                    		sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.
-		                    	</p>
-		                    	<p>
-		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-		                    		Ut wisi enim ad minim veniam, quis nostrud. 
-		                    		Exerci tation ullamcorper suscipit <a href="#">lobortis nisl</a> ut aliquip ex ea commodo consequat. 
-		                    		Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl. 
-		                    	</p>
-			                </div>
-			                <div class="col-4 section-2-box wow fadeInUp">
-		                    	<img src="assets/img/about-us.jpg" alt="about-us">
-			                </div>
-			            </div>
-			        </div>
-		        </div> -->
-		
-				<!-- Section 3 -->
-		        <div class="section-3-container section-container" id="section-3">
-			        <div class="container">
-			        	
-			            <div class="row">
-			                <div class="col section-3 section-description wow fadeIn">
-			                    <h2>الإنجازات</h2>
-			                    <div class="divider-1 wow fadeInUp"><span></span></div>
-			                </div>
-			            </div>
-			            
-			            <div class="row">
-			                <div class="col-md-6 section-3-box wow fadeInLeft">
-			                	<div class="row">
-			                		<div class="col-md-3">
-			                			<div class="section-3-box-icon">
-			                				<i class="fas fa-paperclip"></i>
-			                			</div>
-			                		</div>
-			                		<div class="col-md-9">
-			                			<h3 style="text-align: center;">حاصة على شهادة الرخصة الدولية لقيادة الحاسب الآلي</h3>
-				                    	<p>
-				                    		ICDL Certificate
-				                    	</p>
-			                		</div>
-			                	</div>
-			                </div>
-			                <div class="col-md-6 section-3-box wow fadeInLeft">
-			                	<div class="row">
-			                		<div class="col-md-3">
-			                			<div class="section-3-box-icon">
-			                				<i class="fab fa-microsoft"></i>
-			                			</div>
-			                		</div>
-			                		<div class="col-md-9">
-			                			<h3 style="text-align: center;">حاصلة على شهادة دولية من مايكروسوف</h3>
-				                    	<p>
-				                    		Microsoft Certified Professional
-				                    	</p>
-			                		</div>
-			                	</div>
-			                </div>
-			            </div>
-			            
-			            <div class="row">
-			                <div class="col-md-6 section-3-box wow fadeInLeft">
-			                	<div class="row">
-			                		<div class="col-md-3">
-			                			<div class="section-3-box-icon">
-			                				<i class="fas fa-cloud"></i>
-			                			</div>
-			                		</div>
-			                		<div class="col-md-9">
-			                			<h3 style="text-align: center;">حاصلة على شهادة دولية من سيسكو</h3>
-				                    	<p>
-				                    		Cisco Certified Network Associate
-				                    	</p>
-			                		</div>
-			                	</div>
-			                </div>
-			                <div class="col-md-6 section-3-box wow fadeInLeft">
-			                	<div class="row">
-			                		<div class="col-md-3">
-			                			<div class="section-3-box-icon">
-			                				<i class="fab fa-google"></i>
-			                			</div>
-			                		</div>
-			                		<div class="col-md-9">
-			                			<h3>Minim veniam quis nostrud</h3>
-				                    	<p>
-				                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-				                    		Ut wisi enim ad minim veniam, quis nostrud.
-				                    	</p>
-			                		</div>
-			                	</div>
-			                </div>
-			            </div>
-		
-			        </div>
-		        </div>
-		
-				<!-- Section 4 -->
-		       
-		        
-				
-		        <!-- Section 5 -->
-		        <div class="section-5-container section-container" id="section-5">
-			        <div class="container">
-			            <div class="row">
-			                <div class="col section-5 section-description wow fadeIn">
-			                    <h2>شهادات و دورات</h2>
-			                    <div class="divider-1 wow fadeInUp"><span></span></div>
-			                    <!-- <p>حاصله على 30+ شهادات و دورات عالمية و محلية</p> -->
-			                </div>
-			            </div>
-			            <div class="row">
-		                	<div class="col-md-4 section-5-box wow fadeInUp">
-		                		<div class="section-5-box-image"><img src="assets/img/portfolio/1.jpg" alt="portfolio-1"></div>
-		                		<h3>Internet and computing core certification</h3>
-		                		<div class="section-5-box-date"><i class="far fa-calendar"></i> June 2005</div>
-		                		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
-		                    </div>
-		                    <div class="col-md-4 section-5-box wow fadeInDown">
-			                	<div class="section-5-box-image"><img src="assets/img/portfolio/2.jpg" alt="portfolio-2"></div>
-		                		<h3>CompTIA A+ Certified Professional</h3>
-		                		<div class="section-5-box-date"><i class="far fa-calendar"></i> September 2006</div>
-		                		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
-		                    </div>
-							<div class="col-md-4 section-5-box wow fadeInUp">
-			                	<div class="section-5-box-image"><img src="assets/img/portfolio/4.jpg" alt="portfolio-3"></div>
-		                		<h3>CompTIA Linux+ Certified Professional</h3>
-		                		<div class="section-5-box-date"><i class="far fa-calendar"></i> May 2008</div>
-		                		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
-		                    </div>
-							<div class="col-md-4 section-5-box wow fadeInUp">
-			                	<div class="section-5-box-image"><img src="assets/img/portfolio/3.jpg" alt="portfolio-3"></div>
-		                		<h3>ICDL Certificate</h3>
-		                		<div class="section-5-box-date"><i class="far fa-calendar"></i> August 2007</div>
-		                		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
-		                    </div>
-							<div class="col-md-4 section-5-box wow fadeInUp">
-			                	<div class="section-5-box-image"><img src="assets/img/portfolio/5.jpg" alt="portfolio-3"></div>
-		                		<h3>Microsoft Certified Professional</h3>
-		                		<div class="section-5-box-date"><i class="far fa-calendar"></i> </div>
-		                		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
-		                    </div>
-							<div class="col-md-4 section-5-box wow fadeInUp">
-			                	<div class="section-5-box-image"><img src="assets/img/portfolio/6.jpg" alt="portfolio-3"></div>
-		                		<h3>Cisco Certified Network Associate</h3>
-		                		<div class="section-5-box-date"><i class="far fa-calendar"></i> April 2011</div>
-		                		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
-		                    </div>
-							<div class="col-md-4 section-5-box wow fadeInUp">
-			                	<div class="section-5-box-image"><img src="assets/img/portfolio/7.png" alt="portfolio-3"></div>
-		                		<h3 style="text-align: right;">استراتيجيات بيئات التعلم في القرن 21</h3>
-		                		<div class="section-5-box-date"><i class="far fa-calendar"></i> July 2018</div>
-		                		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
-		                    </div>
-							<div class="col-md-4 section-5-box wow fadeInUp">
-			                	<div class="section-5-box-image"><img src="assets/img/portfolio/8.png" alt="portfolio-3"></div>
-		                		<h3 style="text-align: right;">دمج التقنية بالتعليم لبناء مهارات القرن 21</h3>
-		                		<div class="section-5-box-date"><i class="far fa-calendar"></i> July 2018</div>
-		                		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
-		                    </div>
-							<div class="col-md-4 section-5-box wow fadeInUp">
-			                	<div class="section-5-box-image"><img src="assets/img/portfolio/9.jpg" alt="portfolio-3"></div>
-		                		<h3 style="text-align: right;">معلمي بوابة المستقبل بالمدارس</h3>
-		                		<div class="section-5-box-date"><i class="far fa-calendar"></i> September 2017</div>
-		                		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
-		                    </div>
-							<div class="col-md-4 section-5-box wow fadeInUp">
-			                	<div class="section-5-box-image"><img src="assets/img/portfolio/10.jpeg" alt="portfolio-3"></div>
-		                		<h3 style="text-align: right;">البرنامج الصيفي مجتمعات الممارسة المهنية</h3>
-		                		<div class="section-5-box-date"><i class="far fa-calendar"></i> August 2021</div>
-		                		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
-		                    </div>
-							<div class="col-md-4 section-5-box wow fadeInUp">
-			                	<div class="section-5-box-image"><img src="assets/img/portfolio/11.jpg" alt="portfolio-3"></div>
-		                		<h3>Hour of Code 2020</h3>
-		                		<div class="section-5-box-date"><i class="far fa-calendar"></i> 2020</div>
-		                		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
-		                    </div>
-							<div class="col-md-4 section-5-box wow fadeInUp">
-			                	<div class="section-5-box-image"><img src="assets/img/portfolio/12.png" alt="portfolio-3"></div>
-		                		<h3 style="text-align: right;">ادوات القياس والتقويم في نظام ادارة التعليم المدرسي</h3>
-		                		<div class="section-5-box-date"><i class="far fa-calendar"></i> November 2020</div>
-		                		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
-		                    </div>
-			            </div>
-			        </div>
-		        </div>
-				<div class="section-4-container section-container" id="section-4">
-				<!-- <div class="section-4-container section-container section-container-image-bg" id="section-4"> -->
-			        <div class="container">
-			            <div class="row">
-			                <div class="col section-4 section-description wow fadeInLeftBig">
-								<h2>إستراتيجيات التدريس</h2>
-								<div class="divider-1 wow fadeInUp"><span></span></div>
-							</div>
-						</div>
-						<div class="container bootstrap snippets bootdeys">
-							<div class="row">
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
-											<div class="content">
-												<h4 class="title">الفصل المقلوب</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
-											<div class="content">
-												<h4 class="title">التعليم التعاوني</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
-											<div class="content">
-												<h4 class="title">التعليم التشاركي</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="brown" data-radius="none">
-											<div class="content">
-												<h4 class="title">التعليم الذاتي</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
-											<div class="content">
-												<h4 class="title">التعلم بالإكتشاف</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="orange" data-radius="none">
-											<div class="content">
-												<h4 class="title">التعلم المبني على حل المشكلات</h4>
-												</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
-											<div class="content">
-												<h4 class="title">التعلم المبني على المشاريع</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
-											<div class="content">
-												<h4 class="title">التعلم المبني على اللعب</h4>
-											</div>
-										</div> 
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
-											<div class="content">
-												<h4 class="title">التعلم بالنمذجة</h4>
-												</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="brown" data-radius="none">
-											<div class="content">
-												<h4 class="title">التعلم المتمايز</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
-											<div class="content">
-												<h4 class="title">الخرائط الذهنية</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="orange" data-radius="none">
-											<div class="content">
-												<h4 class="title">العصف الذهني</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
-											<div class="content">
-												<h4 class="title">رحلات تعليمية</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
-											<div class="content">
-												<h4 class="title">رحلات تعليمية إفتراضية</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
-											<div class="content">
-												<h4 class="title">تجارب معملية</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="brown" data-radius="none">
-											<div class="content">
-												<h4 class="title">تجارب معملية إفتراضية</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
-											<div class="content">
-												<h4 class="title">تقارير كتب</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6 content-card">
-									<div class="card-big-shadow">
-										<div class="card card-just-text" data-background="color" data-color="orange" data-radius="none">
-											<div class="content">
-												<h4 class="title">دراسة حالة</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							</div>
-			                    
-			                </div>
-			            </div>
-
-		        </div>
-		        <!-- Section 6 -->
-		        <div class="section-6-container section-container" id="section-6">
-			        <!-- <div class="container">
-			            <div class="row">
-			                <div class="col section-6 section-description wow fadeIn">
-			                    <h2>Contact Us</h2>
-			                    <div class="divider-1 wow fadeInUp"><span></span></div>
-			                    <p>Send us an email using the form below or follow us on our social media channels.</p>
-			                </div>
-			            </div>
-			            <div class="row">
-		                	<div class="col-md-6 section-6-box wow fadeInUp">
-		                		<h3>By eMail</h3>
-		                    	<div class="section-6-form">
-		                    		<form role="form" action="assets/contact.php" method="post">
-				                    	<div class="form-group">
-				                    		<label class="sr-only" for="contact-email">Email</label>
-				                        	<input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
-				                        </div>
-				                        <div class="form-group">
-				                        	<label class="sr-only" for="contact-subject">Subject</label>
-				                        	<input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
-				                        </div>
-				                        <div class="form-group">
-				                        	<label class="sr-only" for="contact-message">Message</label>
-				                        	<textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
-				                        </div>
-				                        <button type="submit" class="btn btn-primary btn-customized"><i class="fas fa-paper-plane"></i> Send Message</button>
-				                    </form>
-		                    	</div>
-		                    </div>
-		                    <div class="col-md-5 offset-md-1 section-6-box wow fadeInDown">
-		                    	<h3>Follow us</h3>
-		                    	<div class="section-6-social">
-			                    	<a href="#"><i class="fab fa-facebook-f"></i></a>
-									<a href="#"><i class="fab fa-dribbble"></i></a>
-									<a href="#"><i class="fab fa-twitter"></i></a>
-									<a href="#"><i class="fab fa-instagram"></i></a>
-									<a href="#"><i class="fab fa-pinterest"></i></a>
-		                    	</div>
-		                    </div>
-			            </div>
-			        </div> -->
-					
-					<div class="container">
-						<div class="col section-5 section-description wow fadeIn">
-							<h2>الجدول الدراسي</h2>
-							<div class="divider-1 wow fadeInUp"><span></span></div>
-						</div>
-						<div class="timetable-img text-center">
-							<img src="img/content/timetable.png" alt="">
-						</div>
-						<div class="table-responsive">
-							<table class="table table-bordered text-center">
-								<thead>
-									<tr class="bg-light-gray">
-										<th class="text-uppercase">الحصة
-										</th>
-										<th class="text-uppercase">الأحد</th>
-										<th class="text-uppercase">الإثنين</th>
-										<th class="text-uppercase">الثلاثاء</th>
-										<th class="text-uppercase">الإربعاء</th>
-										<th class="text-uppercase">الخميس</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="align-middle">الأولى</td>
-										<td>
-											<span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">خامس-1</span>
-											<div class="margin-10px-top font-size14">6:45-07:30</div>
-										</td>
-										<td>
-											<span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">سادس-3</span>
-											<div class="margin-10px-top font-size14">6:45-07:30</div>
-										</td>
-		
-										<td>
-											<span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">خامس-1</span>
-											<div class="margin-10px-top font-size14">6:45-07:30</div>
-										</td>
-										<td>
-											<span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">رابع-2</span>
-											<div class="margin-10px-top font-size14">6:45-07:30</div>
-										</td>
-										<td class="bg-light-gray"></td>
-									</tr>
-		
-									<tr>
-										<td class="align-middle">الثانية</td>
-										<td class="bg-light-gray">
-
-										</td>
-										<td>
-											<span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">خامس-2</span>
-											<div class="margin-10px-top font-size14">07:30-08:15</div>
-										</td>
-										<td>
-											<span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">رابع-4</span>
-											<div class="margin-10px-top font-size14">07:30-08:15</div>
-										</td>
-										<td>
-											<span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">رابع-1</span>
-											<div class="margin-10px-top font-size14">07:30-08:15</div>
-										</td>
-										<td>
-											<span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">رابع-1</span>
-											<div class="margin-10px-top font-size14">07:30-08:15</div>
-										</td>
-
-									</tr>
-		
-									<tr>
-										<td class="align-middle">الثالثة</td>
-										<td>
-											<span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">رابع-4</span>
-											<div class="margin-10px-top font-size14">08:15-09:00</div>
-										</td>
-										<td>
-											<span class="bg-red padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">رابع-3</span>
-											<div class="margin-10px-top font-size14">08:15-09:00</div>
-										</td>
-										<td>
-											<span class="bg-blue padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">خامس-3</span>
-											<div class="margin-10px-top font-size14">08:15-09:00</div>
-										</td>
-										<td class="bg-light-gray">
-
-										</td>
-										<td>
-											<span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">رابع-2</span>
-											<div class="margin-10px-top font-size14">08:15-09:00</div>
-										</td>
-									</tr>
-		
-									<tr>
-										<td class="align-middle">الرابعة</td>
-										<td class="bg-light-gray">
-		
-										</td>
-										<td>
-											<span class="bg-green-blue padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">نشاط</span>
-											<div class="margin-10px-top font-size14">09:15-10:00</div>
-										</td>
-										<td>
-											<span class="bg-green-blue padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">نشاط</span>
-											<div class="margin-10px-top font-size14">09:15-10:00</div>
-										</td>
-										<td class="bg-light-gray">
-		
-										</td>
-										<td>
-											<span class="bg-blue-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">سادس-2</span>
-											<div class="margin-10px-top font-size14">09:15-10:00</div>
-										</td>
-									</tr>
-		
-									<tr>
-										<td class="align-middle">الخامسة</td>
-										<td>
-											<span class="bg-blue-green3 padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">سادس-1</span>
-											<div class="margin-10px-top font-size14">10:00-10:45</div>
-										</td>
-										<td>
-											<span class="bg-blue-green4 padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">خامس-4</span>
-											<div class="margin-10px-top font-size14">10:00-10:45</div>
-										</td>
-										<td>
-											<span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">سادس-3</span>
-											<div class="margin-10px-top font-size14">10:00-10:45</div>
-										</td>
-										<td>
-											<span class="bg-blue-green3 padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">سادس-1</span>
-											<div class="margin-10px-top font-size14">10:00-10:45</div>
-										</td>
-										<td>
-											<span class="bg-blue-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">سادس-2</span>
-											<div class="margin-10px-top font-size14">10:00-10:45</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="align-middle">السادسة</td>
-										<td>
-											<span class="bg-blue-green4 padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">خامس-4</span>
-											<div class="margin-10px-top font-size14">10:45-11:30</div>
-										</td>
-										<td>
-											<span class="bg-blue padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">خامس-3</span>
-											<div class="margin-10px-top font-size14">10:45-11:30</div>
-										</td>
-										<td class="bg-light-gray">
-		
-										</td>
-										<td>
-											<span class="bg-red padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">رابع-3</span>
-											<div class="margin-10px-top font-size14">10:45-11:30</div>
-										</td>
-										<td class="bg-light-gray">
-		
-										</td>
-									</tr>
-									<tr>
-										<td class="align-middle">السابعة</td>
-										<td>
-											<span class="bg-blue-green2 padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">سادس-4</span>
-											<div class="margin-10px-top font-size14">11:30-12:15</div>
-										</td>
-										
-										<td>
-											<span class="bg-blue-green2 padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">سادس-4</span>
-											<div class="margin-10px-top font-size14">11:30-12:15</div>
-										</td>
-										<td>
-											<span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">خامس-2</span>
-											<div class="margin-10px-top font-size14">11:30-12:15</div>
-										</td>
-										<td class="bg-light-gray">
-		
-										</td>
-										<td class="bg-light-gray">
-		
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-		        </div>
-		</div>
-		        <!-- Footer -->
-		        <footer class="footer-container">
-		
-			        <div class="container">
-			        	<div class="row">
-		
-		                    <div class="col">
-		                    	&copy; Made with &#10084; by Shaima Alshammary.
-		                    </div>
-		
-		                </div>
-			        </div>
-		
-		        </footer>
-	        
-	        </div>
-	        <!-- End content -->
-        
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <!-- close sidebar menu -->
+        <div class="dismiss">
+          <i class="fas fa-arrow-left"></i>
         </div>
-		</div>
-        <!-- End wrapper -->
+        <div class="logo">
+          <h3 style="color: black"><a href="index.html"></a></h3>
+        </div>
 
-        <!-- Javascript -->
-		<script src="assets/js/jquery-3.3.1.min.js"></script>
-		<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/jquery.waypoints.min.js"></script>
-        <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
+        <ul class="list-unstyled menu-elements">
+          <li class="active">
+            <a class="scroll-link" href="#top-content"
+              ><i class="fas fa-home"></i> الصفحة الرئيسية</a
+            >
+          </li>
+          <li>
+            <a class="scroll-link" href="#section-1"
+              ><i class="fas fa-user"></i> حول</a
+            >
+          </li>
+          <li>
+            <a class="scroll-link" href="#section-2"
+              ><i class="fas fa-stream"></i> تاريخي الوظيفي</a
+            >
+          </li>
+          <li>
+            <a class="scroll-link" href="#section-3"
+              ><i class="fas fa-trophy"></i> الإنجازات</a
+            >
+          </li>
+          <li>
+            <a class="scroll-link" href="#section-5"
+              ><i class="fas fa-envelope"></i> شهادات</a
+            >
+          </li>
+          <li>
+            <a class="scroll-link" href="#section-4"
+              ><i class="fas fa-cog"></i> استراتيجيات التدريس</a
+            >
+          </li>
+          <li>
+            <a class="scroll-link" href="#section-6"
+              ><i class="fas fa-table"></i> الجدول الدراسي</a
+            >
+          </li>
+        </ul>
 
-    </body>
+        <div class="to-top">
+          <a class="btn btn-primary btn-customized-3" href="#" role="button">
+            <i class="fas fa-arrow-up"></i> Top
+          </a>
+        </div>
 
+        <div class="dark-light-buttons">
+          <a
+            class="btn btn-primary btn-customized-4 btn-customized-dark"
+            href="#"
+            role="button"
+            >Dark</a
+          >
+          <a
+            class="btn btn-primary btn-customized-4 btn-customized-light"
+            href="#"
+            role="button"
+            >Light</a
+          >
+        </div>
+      </nav>
+      <!-- End sidebar -->
+
+      <!-- Dark overlay -->
+      <div class="overlay"></div>
+
+      <!-- Content -->
+      <div class="content">
+        <!-- open sidebar menu -->
+        <a
+          class="btn btn-primary btn-customized open-menu"
+          href="#"
+          role="button"
+        >
+          <i class="fas fa-align-left"></i> <span>Menu</span>
+        </a>
+
+        <!-- Top content -->
+        <!--  style="background-color: red;" -->
+        <div class="top-content section-container" id="top-content">
+          <div class="container">
+            <div class="row">
+              <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <h1 class="wow fadeIn" style="color: black;">
+                  <strong>ملف إنجاز للمعلمة ايمان الشمري</strong>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="section-1-container section-container" id="section-1">
+          <div class="container">
+            <div class="row">
+              <div class="col section-1 section-description wow fadeIn">
+                <h2>
+                   خريجه من كلية التربية بالجبيل، قسم الحاسب الالي عام 1425 هـ
+                    <br>
+                    حاصله على شهادات دوليه معتمده في صيانه الحاسب و الشبكات و خبيرة مايكروسوفت،
+                  خبرة في التعليم عشر سنوات منذ ١٤٣٤ هـ
+                  <br>
+                  معلمه في ابتدائية جمانه بنت ابي طالب
+                </h2>
+                <div class="divider-1 wow fadeInUp"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <!-- Done -->
+      <div
+        class="section-2-container section-container section-container"
+        id="section-2"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col section-2 section-description wow fadeIn">
+              <h2>التاريخ الوظيفي</h2>
+              <div class="divider-1 wow fadeInUp"><span></span></div>
+            </div>
+          </div>
+          <div class="main-timeline">
+            <!-- start experience section-->
+            <div class="timeline">
+              <div class="icon"></div>
+              <div class="date-content">
+                <div class="date-outer">
+                  <span class="date">
+                    <span class="month">4 سنوات</span>
+                    <span class="year">2005</span>
+                  </span>
+                </div>
+              </div>
+              <div class="timeline-content">
+                <h5 class="title">معهد نيو هرايزن</h5>
+                <!-- <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  efficitur ex sit amet massa scelerisque scelerisque. Aliquam
+                  erat volutpat. Aenean interdum finibus efficitur. Praesent
+                  dapibus dolor felis, eu ultrices elit molestie.
+                </p> -->
+              </div>
+            </div>
+            <!-- end experience section-->
+
+            <!-- start experience section-->
+            <div class="timeline">
+              <div class="icon"></div>
+              <div class="date-content">
+                <div class="date-outer">
+                  <span class="date">
+                    <span class="month">سنة واحده</span>
+                    <span class="year">2010</span>
+                  </span>
+                </div>
+              </div>
+              <div class="timeline-content">
+                <h5 class="title">الثانوية الاولى ب قارا</h5>
+                <!-- <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  efficitur ex sit amet massa scelerisque scelerisque. Aliquam
+                  erat volutpat. Aenean interdum finibus efficitur. Praesent
+                  dapibus dolor felis, eu ultrices elit molestie.
+                </p> -->
+              </div>
+            </div>
+            <!-- end experience section-->
+
+            <!-- start experience section-->
+            <div class="timeline">
+              <div class="icon"></div>
+              <div class="date-content">
+                <div class="date-outer">
+                  <span class="date">
+                    <span class="month">سنتان</span>
+                    <span class="year">2011</span>
+                  </span>
+                </div>
+              </div>
+              <div class="timeline-content">
+                <h5 class="title">٢٠١١ -٢٠١٣ الثانوية الاولى بدومة الجندل</h5>
+                <!-- <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  efficitur ex sit amet massa scelerisque scelerisque. Aliquam
+                  erat volutpat. Aenean interdum finibus efficitur. Praesent
+                  dapibus dolor felis, eu ultrices elit molestie.
+                </p> -->
+              </div>
+            </div>
+            <!-- end experience section-->
+
+            <!-- start experience section-->
+            <div class="timeline">
+              <div class="icon"></div>
+              <div class="date-content">
+                <div class="date-outer">
+                  <span class="date">
+                    <span class="month">سنة واحده</span>
+                    <span class="year">2014</span>
+                  </span>
+                </div>
+              </div>
+              <div class="timeline-content">
+                <h5 class="title"> المتوسطه الرابعه ب دومة الجندل</h5>
+                <!-- <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  efficitur ex sit amet massa scelerisque scelerisque. Aliquam
+                  erat volutpat. Aenean interdum finibus efficitur. Praesent
+                  dapibus dolor felis, eu ultrices elit molestie.
+                </p> -->
+              </div>
+            </div>
+            <!-- end experience section-->
+            <!-- start experience section-->
+            <div class="timeline">
+              <div class="icon"></div>
+              <div class="date-content">
+                <div class="date-outer">
+                  <span class="date">
+                    <span class="month">4 سنوات</span>
+                    <span class="year">2015</span>
+                  </span>
+                </div>
+              </div>
+              <div class="timeline-content">
+                <h5 class="title">المتوسطه الأولى ب صفوى</h5>
+                <!-- <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  efficitur ex sit amet massa scelerisque scelerisque. Aliquam
+                  erat volutpat. Aenean interdum finibus efficitur. Praesent
+                  dapibus dolor felis, eu ultrices elit molestie.
+                </p> -->
+              </div>
+            </div>
+            <!-- end experience section-->
+            <!-- start experience section-->
+            <div class="timeline">
+              <div class="icon"></div>
+              <div class="date-content">
+                <div class="date-outer">
+                  <span class="date">
+                    <span class="month">سنة واحده</span>
+                    <span class="year">2020</span>
+                  </span>
+                </div>
+              </div>
+              <div class="timeline-content">
+                <h5 class="title">الابتدائية الحادية عشر بالجبيل</h5>
+                <!-- <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  efficitur ex sit amet massa scelerisque scelerisque. Aliquam
+                  erat volutpat. Aenean interdum finibus efficitur. Praesent
+                  dapibus dolor felis, eu ultrices elit molestie.
+                </p> -->
+              </div>
+            </div>
+            <!-- end experience section-->
+            <!-- start experience section-->
+            <div class="timeline">
+              <div class="icon"></div>
+              <div class="date-content">
+                <div class="date-outer">
+                  <span class="date">
+                    <span class="month">سنة واحده</span>
+                    <span class="year">2022</span>
+                  </span>
+                </div>
+              </div>
+              <div class="timeline-content">
+                <h5 class="title"> ابتدائية جمانه بنت ابي طالب</h5>
+                <!-- <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  efficitur ex sit amet massa scelerisque scelerisque. Aliquam
+                  erat volutpat. Aenean interdum finibus efficitur. Praesent
+                  dapibus dolor felis, eu ultrices elit molestie.
+                </p> -->
+              </div>
+            </div>
+            <!-- end experience section-->
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <!-- Done -->
+      <div class="section-3-container section-container" id="section-3">
+        <div class="container">
+          <div class="row">
+            <div class="col section-3 section-description wow fadeIn">
+              <h2>الإنجازات</h2>
+              <div class="divider-1 wow fadeInUp"><span></span></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 section-3-box wow fadeInLeft">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="section-3-box-icon">
+                    <i class="fas fa-paperclip"></i>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <h3 style="text-align: center">
+                    حاصة على شهادة الرخصة الدولية لقيادة الحاسب الآلي
+                  </h3>
+                  <p>ICDL Certificate</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 section-3-box wow fadeInLeft">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="section-3-box-icon">
+                    <i class="fab fa-microsoft"></i>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <h3 style="text-align: center">
+                    حاصلة على شهادة دولية من مايكروسوف
+                  </h3>
+                  <p>Microsoft Certified Professional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 section-3-box wow fadeInLeft">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="section-3-box-icon">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <h3 style="text-align: center">
+                    حاصلة على شهادة دولية من سيسكو
+                  </h3>
+                  <p>Cisco Certified Network Associate</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 section-3-box wow fadeInLeft">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="section-3-box-icon">
+                    <i class="far fa-handshake"></i>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <h3>مديرة المركز الخامس لتعليم الكبيرات</h3>
+                  <p>
+                    مديرة بالتكليف
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5 -->
+      <!-- Done -->
+      <div class="section-5-container section-container" id="section-5">
+        <div class="container">
+          <div class="row">
+            <div class="col section-5 section-description wow fadeIn">
+              <h2>شهادات و دورات</h2>
+              <div class="divider-1 wow fadeInUp"><span></span></div>
+              <!-- <p>حاصله على 30+ شهادات و دورات عالمية و محلية</p> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 section-5-box wow fadeInUp">
+              <div class="section-5-box-image">
+                <img src="assets/img/portfolio/1.jpg" alt="portfolio-1" />
+              </div>
+              <h3>Internet and computing core certification</h3>
+              <div class="section-5-box-date">
+                <i class="far fa-calendar"></i> June 2005
+              </div>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
+            </div>
+            <div class="col-md-4 section-5-box wow fadeInDown">
+              <div class="section-5-box-image">
+                <img src="assets/img/portfolio/2.jpg" alt="portfolio-2" />
+              </div>
+              <h3>CompTIA A+ Certified Professional</h3>
+              <div class="section-5-box-date">
+                <i class="far fa-calendar"></i> September 2006
+              </div>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
+            </div>
+            <div class="col-md-4 section-5-box wow fadeInUp">
+              <div class="section-5-box-image">
+                <img src="assets/img/portfolio/4.jpg" alt="portfolio-3" />
+              </div>
+              <h3>CompTIA Linux+ Certified Professional</h3>
+              <div class="section-5-box-date">
+                <i class="far fa-calendar"></i> May 2008
+              </div>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
+            </div>
+            <div class="col-md-4 section-5-box wow fadeInUp">
+              <div class="section-5-box-image">
+                <img src="assets/img/portfolio/3.jpg" alt="portfolio-3" />
+              </div>
+              <h3>ICDL Certificate</h3>
+              <div class="section-5-box-date">
+                <i class="far fa-calendar"></i> August 2007
+              </div>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
+            </div>
+            <div class="col-md-4 section-5-box wow fadeInUp">
+              <div class="section-5-box-image">
+                <img src="assets/img/portfolio/12.png" alt="portfolio-3" />
+              </div>
+              <h3 style="text-align: right">
+                ادوات القياس والتقويم في نظام ادارة التعليم المدرسي
+              </h3>
+              <div class="section-5-box-date">
+                <i class="far fa-calendar"></i> November 2020
+              </div>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
+            </div>
+
+            <div class="col-md-4 section-5-box wow fadeInUp">
+              <div class="section-5-box-image">
+                <img src="assets/img/portfolio/6.jpg" alt="portfolio-3" />
+              </div>
+              <h3>Cisco Certified Network Associate</h3>
+              <div class="section-5-box-date">
+                <i class="far fa-calendar"></i> April 2011
+              </div>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
+            </div>
+            <div class="col-md-4 section-5-box wow fadeInUp">
+              <div class="section-5-box-image">
+                <img src="assets/img/portfolio/7.png" alt="portfolio-3" />
+              </div>
+              <h3 style="text-align: right">
+                استراتيجيات بيئات التعلم في القرن 21
+              </h3>
+              <div class="section-5-box-date">
+                <i class="far fa-calendar"></i> July 2018
+              </div>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
+            </div>
+            <div class="col-md-4 section-5-box wow fadeInUp">
+              <div class="section-5-box-image">
+                <img src="assets/img/portfolio/8.png" alt="portfolio-3" />
+              </div>
+              <h3 style="text-align: right">
+                دمج التقنية بالتعليم لبناء مهارات القرن 21
+              </h3>
+              <div class="section-5-box-date">
+                <i class="far fa-calendar"></i> July 2018
+              </div>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
+            </div>
+            <div class="col-md-4 section-5-box wow fadeInUp">
+              <div class="section-5-box-image">
+                <img src="assets/img/portfolio/9.jpg" alt="portfolio-3" />
+              </div>
+              <h3 style="text-align: right">معلمي بوابة المستقبل بالمدارس</h3>
+              <div class="section-5-box-date">
+                <i class="far fa-calendar"></i> September 2017
+              </div>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
+            </div>
+            <div class="col-md-4 section-5-box wow fadeInUp">
+              <div class="section-5-box-image">
+                <img src="assets/img/portfolio/10.jpeg" alt="portfolio-3" />
+              </div>
+              <h3 style="text-align: right">
+                البرنامج الصيفي مجتمعات الممارسة المهنية
+              </h3>
+              <div class="section-5-box-date">
+                <i class="far fa-calendar"></i> August 2021
+              </div>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
+            </div>
+            <div class="col-md-4 section-5-box wow fadeInUp">
+              <div class="section-5-box-image">
+                <img src="assets/img/portfolio/11.jpg" alt="portfolio-3" />
+              </div>
+              <h3>Hour of Code 2020</h3>
+              <div class="section-5-box-date">
+                <i class="far fa-calendar"></i> 2020
+              </div>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
+            </div>
+            
+            <div class="col-md-4 section-5-box wow fadeInUp">
+              <div class="section-5-box-image">
+                <img src="assets/img/portfolio/5.jfif" alt="portfolio-3" />
+              </div>
+              <h3>تصميم أوراق عمل تفاعليه WIZER </h3>
+              <div class="section-5-box-date">
+                <i class="far fa-calendar"></i> December 2022
+              </div>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4 -->
+      <!-- Done -->
+      <div class="section-4-container section-container" id="section-4">
+        <div class="container">
+          <div class="row">
+            <div class="col section-4 section-description wow fadeInLeftBig">
+              <h2>إستراتيجيات التدريس</h2>
+              <div class="divider-1 wow fadeInUp"><span></span></div>
+            </div>
+          </div>
+          <div class="container bootstrap snippets bootdeys">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="blue"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">الفصل المقلوب</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="green"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">التعليم التعاوني</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="yellow"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">التعليم التشاركي</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="brown"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">التعليم الذاتي</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="purple"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">التعلم بالإكتشاف</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="orange"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">التعلم المبني على حل المشكلات</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="blue"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">التعلم المبني على المشاريع</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="green"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">التعلم المبني على اللعب</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="yellow"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">التعلم بالنمذجة</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="brown"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">التعلم المتمايز</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="purple"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">الخرائط الذهنية</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="orange"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">العصف الذهني</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="blue"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">رحلات تعليمية</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="green"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">رحلات تعليمية إفتراضية</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="yellow"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">تجارب معملية</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="brown"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">تجارب معملية إفتراضية</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="purple"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">تقارير كتب</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                  <div
+                    class="card card-just-text"
+                    data-background="color"
+                    data-color="orange"
+                    data-radius="none"
+                  >
+                    <div class="content">
+                      <h4 class="title">دراسة حالة</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 6 -->
+      <!-- Done -->
+      <div class="section-6-container section-container" id="section-6">
+        <div class="container">
+          <div class="col section-5 section-description wow fadeIn">
+            <h2>الجدول الدراسي</h2>
+            <div class="divider-1 wow fadeInUp"><span></span></div>
+          </div>
+          <div class="timetable-img text-center">
+            <img src="img/content/timetable.png" alt="" />
+          </div>
+          <div class="table-responsive">
+            <table class="table table-bordered text-center">
+              <thead>
+                <tr class="bg-light-gray">
+                  <th class="text-uppercase">الحصة</th>
+                  <th class="text-uppercase">الأحد</th>
+                  <th class="text-uppercase">الإثنين</th>
+                  <th class="text-uppercase">الثلاثاء</th>
+                  <th class="text-uppercase">الإربعاء</th>
+                  <th class="text-uppercase">الخميس</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align-middle">الأولى</td>
+                  <td>
+                    <span
+                      class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >خامس-1</span
+                    >
+                    <div class="margin-10px-top font-size14">6:45-07:30</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >سادس-3</span
+                    >
+                    <div class="margin-10px-top font-size14">6:45-07:30</div>
+                  </td>
+
+                  <td>
+                    <span
+                      class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >خامس-1</span
+                    >
+                    <div class="margin-10px-top font-size14">6:45-07:30</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >رابع-2</span
+                    >
+                    <div class="margin-10px-top font-size14">6:45-07:30</div>
+                  </td>
+                  <td class="bg-light-gray"></td>
+                </tr>
+                <tr>
+                  <td class="align-middle">الثانية</td>
+                  <td class="bg-light-gray"></td>
+                  <td>
+                    <span
+                      class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >خامس-2</span
+                    >
+                    <div class="margin-10px-top font-size14">07:30-08:15</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >رابع-4</span
+                    >
+                    <div class="margin-10px-top font-size14">07:30-08:15</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >رابع-1</span
+                    >
+                    <div class="margin-10px-top font-size14">07:30-08:15</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >رابع-1</span
+                    >
+                    <div class="margin-10px-top font-size14">07:30-08:15</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-middle">الثالثة</td>
+                  <td>
+                    <span
+                      class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >رابع-4</span
+                    >
+                    <div class="margin-10px-top font-size14">08:15-09:00</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-red padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >رابع-3</span
+                    >
+                    <div class="margin-10px-top font-size14">08:15-09:00</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-blue padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >خامس-3</span
+                    >
+                    <div class="margin-10px-top font-size14">08:15-09:00</div>
+                  </td>
+                  <td class="bg-light-gray"></td>
+                  <td>
+                    <span
+                      class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >رابع-2</span
+                    >
+                    <div class="margin-10px-top font-size14">08:15-09:00</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-middle">الرابعة</td>
+                  <td class="bg-light-gray"></td>
+                  <td>
+                    <span
+                      class="bg-green-blue padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >نشاط</span
+                    >
+                    <div class="margin-10px-top font-size14">09:15-10:00</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-green-blue padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >نشاط</span
+                    >
+                    <div class="margin-10px-top font-size14">09:15-10:00</div>
+                  </td>
+                  <td class="bg-light-gray"></td>
+                  <td>
+                    <span
+                      class="bg-blue-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >سادس-2</span
+                    >
+                    <div class="margin-10px-top font-size14">09:15-10:00</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-middle">الخامسة</td>
+                  <td>
+                    <span
+                      class="bg-blue-green3 padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >سادس-1</span
+                    >
+                    <div class="margin-10px-top font-size14">10:00-10:45</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-blue-green4 padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >خامس-4</span
+                    >
+                    <div class="margin-10px-top font-size14">10:00-10:45</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >سادس-3</span
+                    >
+                    <div class="margin-10px-top font-size14">10:00-10:45</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-blue-green3 padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >سادس-1</span
+                    >
+                    <div class="margin-10px-top font-size14">10:00-10:45</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-blue-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >سادس-2</span
+                    >
+                    <div class="margin-10px-top font-size14">10:00-10:45</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-middle">السادسة</td>
+                  <td>
+                    <span
+                      class="bg-blue-green4 padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >خامس-4</span
+                    >
+                    <div class="margin-10px-top font-size14">10:45-11:30</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-blue padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >خامس-3</span
+                    >
+                    <div class="margin-10px-top font-size14">10:45-11:30</div>
+                  </td>
+                  <td class="bg-light-gray"></td>
+                  <td>
+                    <span
+                      class="bg-red padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >رابع-3</span
+                    >
+                    <div class="margin-10px-top font-size14">10:45-11:30</div>
+                  </td>
+                  <td class="bg-light-gray"></td>
+                </tr>
+                <tr>
+                  <td class="align-middle">السابعة</td>
+                  <td>
+                    <span
+                      class="bg-blue-green2 padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >سادس-4</span
+                    >
+                    <div class="margin-10px-top font-size14">11:30-12:15</div>
+                  </td>
+
+                  <td>
+                    <span
+                      class="bg-blue-green2 padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >سادس-4</span
+                    >
+                    <div class="margin-10px-top font-size14">11:30-12:15</div>
+                  </td>
+                  <td>
+                    <span
+                      class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"
+                      >خامس-2</span
+                    >
+                    <div class="margin-10px-top font-size14">11:30-12:15</div>
+                  </td>
+                  <td class="bg-light-gray"></td>
+                  <td class="bg-light-gray"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer-container">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              &copy; Made with &#10084; by <a href ="https://wa.me/0540326669"> Shaima Alshammary.</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- End content -->
+
+    <!-- </div>
+		</div> -->
+    <!-- End wrapper -->
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
 </html>
